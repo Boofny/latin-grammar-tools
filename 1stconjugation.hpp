@@ -6,11 +6,16 @@
 class LatinVerb {
     public:
         std::string returnTenseVerb(std::string latinVerb);
+        std::string getBaseVerb(std::string latinVerb);
 };
 
 std::string LatinVerb::returnTenseVerb(std::string latinVerb) {
     std::string getBaseOfVerb = latinVerb.erase(latinVerb.length() - 3);
     return getBaseOfVerb.append("o");
+}
+
+std::string LatinVerb::getBaseVerb(std::string latinVerb) {
+    return latinVerb.erase(latinVerb.length() - 3);
 }
 
 void conjugate1st() {
@@ -31,6 +36,9 @@ void conjugate1st() {
     
     std::cout << '\n';
 
-    std::cout << "Output:\n\n";
-    std::cout << v.returnTenseVerb(verb) << ", 1\n";
+    std::cout << "Output:\n";
+    std::cout << v.returnTenseVerb(verb) << ", 1\n\n";
+    SetConsoleTextAttribute(h, 8);
+    std::cout << "1. " << v.returnTenseVerb(verb) << '\n';
+    std::cout << "2. " << v.getBaseVerb(verb) << '\n';
 }
