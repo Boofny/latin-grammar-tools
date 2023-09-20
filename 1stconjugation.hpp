@@ -1,5 +1,5 @@
 #include <iostream>
 
-void conjugate() {
-    
+void conjugate1st() {
+    std::cout << "Yay it worked!\n";
 }
