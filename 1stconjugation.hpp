@@ -40,5 +40,6 @@ void conjugate1st() {
     std::cout << v.returnTenseVerb(verb) << ", 1\n\n";
     SetConsoleTextAttribute(h, 8);
     std::cout << "1. " << v.returnTenseVerb(verb) << '\n';
-    std::cout << "2. " << v.getBaseVerb(verb) << '\n';
+    std::cout << "2. " << v.getBaseVerb(verb).append("as") << '\n';
+    std::cout << "3. " << v.getBaseVerb(verb).append("at");
 }
