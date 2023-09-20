@@ -15,7 +15,7 @@ std::string LatinVerb::returnTenseVerb(std::string latinVerb) {
 }
 
 std::string LatinVerb::getBaseVerb(std::string latinVerb) {
-    return latinVerb.erase(latinVerb.length() - 3);
+    return latinVerb.erase(latinVerb.length() - 2);
 }
 
 void conjugate1st() {
@@ -39,7 +39,7 @@ void conjugate1st() {
     std::cout << "Output:\n";
     std::cout << v.returnTenseVerb(verb) << ", 1\n\n";
     SetConsoleTextAttribute(h, 8);
-    std::cout << "1. " << v.returnTenseVerb(verb) << '\n';
-    std::cout << "2. " << v.getBaseVerb(verb).append("as") << '\n';
-    std::cout << "3. " << v.getBaseVerb(verb).append("at");
+    std::cout << "1. " << v.returnTenseVerb(verb) << "           1. " << v.getBaseVerb(verb).append("mus") << '\n';
+    std::cout << "2. " << v.getBaseVerb(verb).append("s") << "          2. " << v.getBaseVerb(verb).append("tis") << '\n';
+    std::cout << "3. " << v.getBaseVerb(verb).append("t") << "          3. " << v.getBaseVerb(verb).append("nt") << '\n';
 }
