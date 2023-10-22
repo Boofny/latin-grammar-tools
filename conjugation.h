@@ -5,6 +5,7 @@
 
 class LatinVerb {
     public:
+        std::string verb;
         std::string getTenseVerb(std::string verb);
         std::string getBaseVerb(std::string verb);
 };
@@ -20,11 +21,10 @@ std::string LatinVerb::getBaseVerb(std::string verb) {
 
 void conjugate1st() {
     LatinVerb v;
-    std::string verb;
 
     std::cout << "Enter in a verb in Latin:\n";
-    std::cin >> verb;
+    std::cin >> v.verb;
 
-    std::cout << v.getTenseVerb(verb) << '\n';
-    std::cout << v.getBaseVerb(verb) << '\n';
+    std::cout << v.getTenseVerb(v.verb) << '\n';
+    std::cout << v.getBaseVerb(v.verb) << '\n';
 }
