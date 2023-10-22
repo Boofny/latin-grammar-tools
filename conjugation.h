@@ -14,6 +14,10 @@ std::string LatinVerb::getTenseVerb(std::string verb) {
     return returnTenseVerb.append("o");
 }
 
+std::string LatinVerb::getBaseVerb(std::string verb) {
+    return verb.erase(verb.length() - 2);
+} 
+
 void conjugate1st() {
     LatinVerb v;
     std::string verb;
@@ -22,4 +26,5 @@ void conjugate1st() {
     std::cin >> verb;
 
     std::cout << v.getTenseVerb(verb) << '\n';
+    std::cout << v.getBaseVerb(verb) << '\n';
 }
