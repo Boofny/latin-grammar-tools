@@ -3,16 +3,29 @@
 #include "declination.h"
 
 void declination() {
-    declinate1st();
+    int selection;
+    std::cout << "Select what declination you want to use: (numbers 1-5)\n\n";
+    std::cout << "1st\n";
+    std::cout << "2nd\n";
+    std::cout << "3rd\n";
+    std::cout << "4th\n";
+    std::cout << "5th\n";
+    std::cin >> selection;
+
+    switch (selection) {
+        case 1:
+            declinate1st();
+            break;
+    }
 }
 
 void conjugation() {
     int selection;
     std::cout << "Select what conjugation you want to use: (numbers 1-4)\n\n";
-    std::cout << "1st.\n";
-    std::cout << "2nd.\n";
-    std::cout << "3rd.\n";
-    std::cout << "4th.\n";
+    std::cout << "1st\n";
+    std::cout << "2nd\n";
+    std::cout << "3rd\n";
+    std::cout << "4th\n";
     std::cin >> selection;
 
     switch (selection) {
