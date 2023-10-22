@@ -6,7 +6,19 @@ void declination() {
 }
 
 void conjugation() {
-    std::cout << "Select what conjugation you want to use:\n";
+    int selection;
+    std::cout << "Select what conjugation you want to use:\n\n";
+    std::cout << "1st.\n";
+    std::cout << "2nd.\n";
+    std::cout << "3rd.\n";
+    std::cout << "4th.\n";
+    std::cin >> selection;
+
+    switch (selection) {
+        case 1:
+            conjugate1st();
+            break;
+    }
 }
 
 void imperative() {
