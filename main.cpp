@@ -18,6 +18,9 @@ void conjugation() {
         case 1:
             conjugate1st();
             break;
+        case 2:
+            conjugate2nd();
+            break;
     }
 }
 
