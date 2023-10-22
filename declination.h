@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <string>
+#include <conio.h>
 
 class LatinNoun {
     public:
@@ -14,6 +15,7 @@ std::string LatinNoun::getBaseNoun1st(std::string noun) {
 }
 
 void declinate1st() {
+    system("CLS");
     LatinNoun n;
 
     std::cout << "Enter in a noun in Latin:\n";

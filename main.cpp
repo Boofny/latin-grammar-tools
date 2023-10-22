@@ -1,8 +1,10 @@
 #include <iostream>
+#include <conio.h>
 #include "conjugation.h"
 #include "declination.h"
 
 void declination() {
+    system("CLS");
     int selection;
     std::cout << "Select what declination you want to use: (numbers 1-5)\n\n";
     std::cout << "1st\n";
@@ -20,6 +22,7 @@ void declination() {
 }
 
 void conjugation() {
+    system("CLS");
     int selection;
     std::cout << "Select what conjugation you want to use: (numbers 1-4)\n\n";
     std::cout << "1st\n";

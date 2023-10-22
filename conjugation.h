@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <string>
+#include <conio.h>
 
 class LatinVerb {
     public:
@@ -19,6 +20,7 @@ std::string LatinVerb::getBaseVerb(std::string verb) {
 } 
 
 void conjugate1st() {
+    system("CLS");
     LatinVerb v;
 
     std::cout << "Enter in a verb in Latin:\n";
@@ -39,6 +41,7 @@ void conjugate1st() {
 }
 
 void conjugate2nd() {
+    system("CLS");
     LatinVerb v;
 
     std::cout << "Enter in a verb in Latin:\n";
@@ -59,6 +62,7 @@ void conjugate2nd() {
 }
 
 void conjugate3rd() {
+    system("CLS");
     LatinVerb v;
 
     std::cout << "Enter in a verb in Latin:\n";
