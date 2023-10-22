@@ -25,6 +25,15 @@ void conjugate1st() {
     std::cout << "Enter in a verb in Latin:\n";
     std::cin >> v.verb;
 
-    std::cout << v.getTenseVerb(v.verb) << '\n';
-    std::cout << v.getBaseVerb(v.verb) << '\n';
+    std::cout << '\n';
+
+    std::cout << "1. " << v.getTenseVerb(v.verb) << '\n';
+    std::cout << "2. " << v.getBaseVerb(v.verb).append("s") << '\n';
+    std::cout << "3. " << v.getBaseVerb(v.verb).append("t") << '\n';
+    
+    std::cout << '\n';
+
+    std::cout << "1. " << v.getBaseVerb(v.verb).append("mus") << '\n';
+    std::cout << "2. " << v.getBaseVerb(v.verb).append("tis") << '\n';
+    std::cout << "3. " << v.getBaseVerb(v.verb).append("nt") << '\n';
 }
