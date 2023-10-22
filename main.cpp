@@ -1,6 +1,7 @@
 #include <iostream>
+#include "conjugation.h"
 
 int main() {
-    std::cout << "Hello, World!\n";
+    conjugate1st();
     return 0;
 }
