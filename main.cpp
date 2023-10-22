@@ -7,7 +7,7 @@ void declination() {
 
 void conjugation() {
     int selection;
-    std::cout << "Select what conjugation you want to use:\n\n";
+    std::cout << "Select what conjugation you want to use: (numbers 1-4)\n\n";
     std::cout << "1st.\n";
     std::cout << "2nd.\n";
     std::cout << "3rd.\n";
@@ -20,6 +20,9 @@ void conjugation() {
             break;
         case 2:
             conjugate2nd();
+            break;
+        case 3:
+            conjugate3rd();
             break;
     }
 }
