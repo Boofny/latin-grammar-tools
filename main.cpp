@@ -1,8 +1,9 @@
 #include <iostream>
 #include "conjugation.h"
+#include "declination.h"
 
 void declination() {
-    std::cout << "Work in progress, sorry!\n";
+    declinate1st();
 }
 
 void conjugation() {
