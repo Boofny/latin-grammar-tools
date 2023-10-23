@@ -8,10 +8,15 @@ class LatinNoun {
     public:
         std::string noun;
         std::string getBaseNoun1st(std::string noun);
+        std::string getBaseNoun2nd(std::string noun);
 };
 
 std::string LatinNoun::getBaseNoun1st(std::string noun) {
     return noun.erase(noun.length() - 1);
+}
+
+std::string LatinNoun::getBaseNoun2nd(std::string noun) {
+    return noun.erase(noun.length() - 2);
 }
 
 void declinate1st() {
@@ -46,8 +51,8 @@ void declinate1st() {
 void declinate2nd() {
     LatinNoun n;
 
-    const std::string masculinum1 = "er";
-    const std::string masculinum2 = "us";
+    const std::string masculinum1 = "us";
+    const std::string masculinum2 = "er";
     const std::string neutrum = "um";
 
     std::cout << "Enter in a noun in Latin:\n";
@@ -55,7 +60,7 @@ void declinate2nd() {
     std::getline(std::cin, n.noun);
 
     if (n.noun.substr(n.noun.length() - masculinum1.length()) == masculinum1) {
-        std::cout << n.noun << '\n';
+        std::cout << n.getBaseNoun2nd(n.noun) << '\n';
     }
 
     if (n.noun.substr(n.noun.length() - masculinum2.length()) == masculinum2) {
