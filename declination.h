@@ -59,8 +59,26 @@ void declinate2nd() {
     std::cin.ignore();
     std::getline(std::cin, n.noun);
 
+    std::cout << '\n';
+
     if (n.noun.substr(n.noun.length() - masculinum1.length()) == masculinum1) {
-        std::cout << n.getBaseNoun2nd(n.noun) << '\n';
+        std::cout << "Singularis:\n";
+        std::cout << "N   " << n.getBaseNoun2nd(n.noun).append("us") << '\n';
+        std::cout << "G   " << n.getBaseNoun2nd(n.noun).append("i") << '\n';
+        std::cout << "D   " << n.getBaseNoun2nd(n.noun).append("o") << '\n';
+        std::cout << "Acc " << n.getBaseNoun2nd(n.noun).append("um") << '\n';
+        std::cout << "V   " << n.getBaseNoun2nd(n.noun).append("e") << '\n';
+        std::cout << "Abl " << n.getBaseNoun2nd(n.noun).append("o") << '\n';
+
+        std::cout << '\n';
+
+        std::cout << "Pluralis:\n";
+        std::cout << "N   " << n.getBaseNoun2nd(n.noun).append("i") << '\n';
+        std::cout << "G   " << n.getBaseNoun2nd(n.noun).append("orum") << '\n';
+        std::cout << "D   " << n.getBaseNoun2nd(n.noun).append("is") << '\n';
+        std::cout << "Acc " << n.getBaseNoun2nd(n.noun).append("os") << '\n';
+        std::cout << "V   " << n.getBaseNoun2nd(n.noun).append("i") << '\n';
+        std::cout << "Abl " << n.getBaseNoun2nd(n.noun).append("is") << '\n';
     }
 
     if (n.noun.substr(n.noun.length() - masculinum2.length()) == masculinum2) {
