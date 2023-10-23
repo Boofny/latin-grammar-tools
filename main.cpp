@@ -18,6 +18,9 @@ void declination() {
         case 1:
             declinate1st();
             break;
+        case 2:
+            declinate2nd();
+            break;
     }
 }
 
