@@ -49,6 +49,7 @@ void declinate1st() {
 }
 
 void declinate2nd() {
+    system("CLS");
     LatinNoun n;
 
     const std::string masculinum1 = "us";
@@ -82,7 +83,23 @@ void declinate2nd() {
     }
 
     if (n.noun.substr(n.noun.length() - masculinum2.length()) == masculinum2) {
-        std::cout << n.noun << '\n';
+        std::cout << "Singularis:\n";
+        std::cout << "N   " << n.getBaseNoun2nd(n.noun).append("er") << '\n';
+        std::cout << "G   " << n.getBaseNoun2nd(n.noun).append("ri") << '\n';
+        std::cout << "D   " << n.getBaseNoun2nd(n.noun).append("ro") << '\n';
+        std::cout << "Acc " << n.getBaseNoun2nd(n.noun).append("rum") << '\n';
+        std::cout << "V   " << n.getBaseNoun2nd(n.noun).append("er") << '\n';
+        std::cout << "Abl " << n.getBaseNoun2nd(n.noun).append("ro") << '\n';
+
+        std::cout << '\n';
+
+        std::cout << "Pluralis:\n";
+        std::cout << "N   " << n.getBaseNoun2nd(n.noun).append("ri") << '\n';
+        std::cout << "G   " << n.getBaseNoun2nd(n.noun).append("rorum") << '\n';
+        std::cout << "D   " << n.getBaseNoun2nd(n.noun).append("ris") << '\n';
+        std::cout << "Acc " << n.getBaseNoun2nd(n.noun).append("ros") << '\n';
+        std::cout << "V   " << n.getBaseNoun2nd(n.noun).append("ri") << '\n';
+        std::cout << "Abl " << n.getBaseNoun2nd(n.noun).append("ris") << '\n';
     }
 
     if (n.noun.substr(n.noun.length() - neutrum.length()) == neutrum) {
