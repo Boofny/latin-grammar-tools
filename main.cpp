@@ -2,6 +2,7 @@
 #include <conio.h>
 #include "conjugation.h"
 #include "declination.h"
+#include "imperative.h"
 
 void declination() {
     system("CLS");
@@ -48,7 +49,7 @@ void conjugation() {
 }
 
 void imperative() {
-    std::cout << "Work in progress, sorry!\n";
+    imperativeform();
 }
 
 int main() {
