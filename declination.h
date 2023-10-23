@@ -103,6 +103,22 @@ void declinate2nd() {
     }
 
     if (n.noun.substr(n.noun.length() - neutrum.length()) == neutrum) {
-        std::cout << n.noun << '\n';
+        std::cout << "Singularis:\n";
+        std::cout << "N   " << n.getBaseNoun2nd(n.noun).append("um") << '\n';
+        std::cout << "G   " << n.getBaseNoun2nd(n.noun).append("i") << '\n';
+        std::cout << "D   " << n.getBaseNoun2nd(n.noun).append("o") << '\n';
+        std::cout << "Acc " << n.getBaseNoun2nd(n.noun).append("um") << '\n';
+        std::cout << "V   " << n.getBaseNoun2nd(n.noun).append("um") << '\n';
+        std::cout << "Abl " << n.getBaseNoun2nd(n.noun).append("a") << '\n';
+
+        std::cout << '\n';
+
+        std::cout << "Pluralis:\n";
+        std::cout << "N   " << n.getBaseNoun2nd(n.noun).append("a") << '\n';
+        std::cout << "G   " << n.getBaseNoun2nd(n.noun).append("orum") << '\n';
+        std::cout << "D   " << n.getBaseNoun2nd(n.noun).append("is") << '\n';
+        std::cout << "Acc " << n.getBaseNoun2nd(n.noun).append("a") << '\n';
+        std::cout << "V   " << n.getBaseNoun2nd(n.noun).append("a") << '\n';
+        std::cout << "Abl " << n.getBaseNoun2nd(n.noun).append("is") << '\n';
     }
 }
