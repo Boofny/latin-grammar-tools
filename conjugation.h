@@ -84,4 +84,13 @@ void conjugate3rd() {
 
 void conjugate4th() {
     system("CLS");
+    LatinVerb v;
+
+    std::cout << "Enter in a verb in Latin:\n";
+    std::cin.ignore();
+    std::getline(std::cin, v.verb);
+
+    std::cout << '\n';
+
+    std::cout << "1. " << v.getBaseVerb(v.verb).append("o") << '\n'; 
 }

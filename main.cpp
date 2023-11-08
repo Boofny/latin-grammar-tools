@@ -45,6 +45,9 @@ void conjugation() {
         case 3:
             conjugate3rd();
             break;
+        case 4:
+            conjugate4th();
+            break;
     }
 }
 
