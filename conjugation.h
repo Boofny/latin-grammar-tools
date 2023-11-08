@@ -93,4 +93,12 @@ void conjugate4th() {
     std::cout << '\n';
 
     std::cout << "1. " << v.getBaseVerb(v.verb).append("o") << '\n'; 
+    std::cout << "2. " << v.getBaseVerb(v.verb).append("s") << '\n'; 
+    std::cout << "3. " << v.getBaseVerb(v.verb).append("t") << '\n'; 
+
+    std::cout << '\n';
+
+    std::cout << "1. " << v.getBaseVerb(v.verb).append("mus") << '\n';
+    std::cout << "2. " << v.getBaseVerb(v.verb).append("tis") << '\n';
+    std::cout << "3. " << v.getBaseVerb(v.verb).append("unt") << '\n';
 }
