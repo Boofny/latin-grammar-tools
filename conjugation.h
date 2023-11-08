@@ -81,3 +81,7 @@ void conjugate3rd() {
     std::cout << "2. " << v.getTenseVerb(v.verb).append("itis") << '\n';
     std::cout << "3. " << v.getTenseVerb(v.verb).append("unt") << '\n';
 }
+
+void conjugate4th() {
+    system("CLS");
+}
